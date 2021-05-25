@@ -90,7 +90,7 @@ ROBOTSTXT_OBEY = False
 
 from shutil import which
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium import webdriver
+
 
 SELENIUM_DRIVER_NAME = 'chrome'
 SELENIUM_DRIVER_EXECUTABLE_PATH = which(ChromeDriverManager().install())
