@@ -51,6 +51,6 @@ class FirstSpider(scrapy.Spider):
             "Company name": response.xpath("//div/div/h1/text()").get(),
             "E-mail": response.xpath("(//a[@class='ng-binding'])[2]/@href").get(),
             "number": response.xpath("((//div[@class='row']/section/div/section/ul/li)[3]/span)[2]/text()").get(),
-            "link": response.url
+            "link": response.url,
         }
 
